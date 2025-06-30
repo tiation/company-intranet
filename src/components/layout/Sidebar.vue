@@ -253,6 +253,12 @@ const mainNavItems = [
     badge: null
   },
   {
+    name: 'Calendar',
+    route: '/calendar',
+    icon: 'CalendarIcon',
+    badge: null
+  },
+  {
     name: 'Projects',
     route: '/projects',
     icon: 'ProjectsIcon',
