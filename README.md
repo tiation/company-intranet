@@ -66,6 +66,47 @@ npm run build
 npm run preview
 ```
 
+## GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Setup Instructions
+
+1. **Enable GitHub Pages in Repository Settings:**
+   - Go to your repository on GitHub
+   - Navigate to `Settings` → `Pages`
+   - Under "Source", select `GitHub Actions`
+   - Save the settings
+
+2. **Automatic Deployment:**
+   - Every push to the `main` branch will trigger a deployment
+   - The GitHub Actions workflow will:
+     - Install dependencies
+     - Build the project
+     - Deploy to GitHub Pages
+   - Check the "Actions" tab to monitor deployment status
+
+3. **Access Your Site:**
+   - Once deployed, your site will be available at:
+   - `https://tiation.github.io/company-intranet/`
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+```bash
+# Build the project
+npm run build
+
+# The dist/ folder contains the built files ready for deployment
+```
+
+### Configuration Notes
+
+- The `vite.config.ts` is configured with `base: '/company-intranet/'` for GitHub Pages
+- The GitHub Actions workflow uses Node.js 18 and deploys the `dist` folder
+- The workflow requires `pages: write` and `id-token: write` permissions
+
 ## Features
 
 - 📱 Responsive design with Tailwind CSS
