@@ -94,7 +94,6 @@ router.beforeEach(async (to, from, next) => {
   const isAuthenticated = authStore.isAuthenticated
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
   const requiresGuest = to.matched.some(record => record.meta.requiresGuest)
-  const isPublic = to.matched.some(record => record.meta.public)
   
   // Set page title
   if (to.meta.title) {
