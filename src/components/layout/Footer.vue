@@ -82,6 +82,25 @@
             </ul>
           </div>
 
+          <!-- TiaAstor Resources -->
+          <div>
+            <h4 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
+              TiaAstor Resources
+            </h4>
+            <ul class="space-y-2">
+              <li v-for="link in tiaAstorLinks" :key="link.name">
+                <a
+                  :href="link.href"
+                  class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ link.name }}
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <!-- Support & Resources -->
           <div>
             <h4 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
@@ -225,6 +244,13 @@ const quickLinks = [
   { name: 'Team Directory', href: '/employees', internal: true },
   { name: 'Calendar', href: '/calendar', internal: true },
   { name: 'Resources', href: '/resources', internal: true }
+]
+
+const tiaAstorLinks = [
+  { name: 'TiaAstor GitHub', href: import.meta.env.VITE_TIAASTOR_GITHUB || 'https://github.com/TiaAstor' },
+  { name: 'ChaseWhiteRabbit', href: import.meta.env.VITE_TIAASTOR_MAIN_REPO || 'https://github.com/TiaAstor/ChaseWhiteRabbit' },
+  { name: '19 Trillion Solution', href: import.meta.env.VITE_TIAASTOR_SOLUTION_REPO || 'https://github.com/TiaAstor/19-trillion-solution' },
+  { name: 'RiggerConnect Projects', href: 'https://github.com/TiaAstor?tab=repositories&q=riggerjobs' }
 ]
 
 const supportLinks = [

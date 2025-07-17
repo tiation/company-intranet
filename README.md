@@ -7,7 +7,7 @@ A modern company intranet application built with Vue 3, TypeScript, and Tailwind
 This intranet is designed to showcase TiaAstor's innovative solutions and repositories. Key TiaAstor resources:
 
 - **Main Repository**: [TiaAstor GitHub](https://github.com/TiaAstor)
-- **ChaseWhiteRabbit Project**: [/Users/tiaastor/tiation-github/ChaseWhiteRabbit](https://github.com/TiaAstor/ChaseWhiteRabbit)
+- **ChaseWhiteRabbit Project**: [/Users/tiation/tiation-github/ChaseWhiteRabbit](https://github.com/TiaAstor/ChaseWhiteRabbit)
 - **19 Trillion Solution**: [19-trillion-solution](https://github.com/TiaAstor/19-trillion-solution)
 - **RiggerConnect Projects**: Advanced workforce management solutions
 
